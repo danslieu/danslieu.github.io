@@ -12,7 +12,7 @@
 body {
     /*border: 1px solid black;*/
     height: 90%;
-    width: 90%;
+    width: 100%;
     overflow: auto;
     margin: auto;
     position: absolute;
@@ -26,12 +26,14 @@ leftportraitimage {width: 48%; float: left; text-align: center; margin-left: 0; 
 rightportraitimage {width: 48%; float: left; text-align: center; margin-left: 2%; margin-right: 0; margin-bottom: 5%;}
 landscapeimage {width: 100%; float: left; text-align: right; margin-bottom: 5%;}
 .myaudio{margin:5%}
-.caption{font-size:60%;}
+.caption{font-size:60%; margin-right: 5%}
+.textbox{margin-left: 5%}
 
 
 </style>
 </head>
 <body>
+<div class="textbox">
 Versetzen<br/>
 Umschichten<br/>
 Verlegen<br/>
@@ -46,6 +48,7 @@ Sand<br/>
 Moose<br/>
 Blätter<br/>
 Rinde<br/>
+</div>
 <br/>
 <br/>
 <br/>
@@ -78,7 +81,7 @@ Your browser does not support the audio element.
 </audio>
 <br/>
 <br/>
-<div style = "text-align: center">
+<div style = "text-align: center" class = "textbox">
 entziehen<br/>
 herausziehen<br/>
 lösen<br/>
@@ -96,7 +99,10 @@ Your browser does not support the audio element.
 <br/>
 <br/>
 <landscapeimage>
-<img src="images/garten.jpg" alt="garten" class="myimage">
+  <video class="myimage" controls>
+   <source src="video/waves.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+ </video>
 <br/>
  <font face="Alpha-Medium" class="caption">Das ist eine Bildunterschrift</font>
 </landscapeimage>
